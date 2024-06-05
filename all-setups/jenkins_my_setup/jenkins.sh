@@ -8,7 +8,7 @@ sudo mv apache-maven-3.8.8 /opt/maven
 
 
 # Set up symbolic link
-sudo ln -sfn /opt/apache-maven-3.9.7 /opt/maven
+sudo ln -sfn /opt/apache-maven-3.8.8 /opt/maven
 
 export M2_HOME=/opt/maven
 export PATH=$M2_HOME/bin:$PATH
