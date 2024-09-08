@@ -14,5 +14,5 @@ mv kops-linux-amd64 /usr/local/bin/kops
 aws s3api create-bucket --bucket rakeshcloud.k8s.local --region ap-south-1
 aws s3api put-bucket-versioning --bucket rakeshcloud.k8s.local --region us-east-1 --versioning-configuration Status=Enabled
 export KOPS_STATE_STORE=s3://rakeshcloud.k8s.local
-kops create cluster --name rahams.k8s.local --zones us-east-1a --master-count=1 --master-size t2.medium --node-count=2 --node-size t2.medium
-kops update cluster --name rahams.k8s.local --yes --admin
+kops create cluster --name rakesh.k8s.local --zones us-east-1a --master-count=1 --master-size t2.medium --node-count=2 --node-size t2.medium
+kops update cluster --name rakesh.k8s.local --yes --admin
